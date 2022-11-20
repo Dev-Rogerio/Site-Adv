@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2? family= Dancing+Script:wght@400;500;600 & display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.dad_quemsomos {
+    width: 100%;
+    height: 100vh;
+    background-color: beige;
+    display: grid;
+    justify-content: center;
+    
+   
+}
+
+.header_quemsomos {
+    background-color: #060606;
+    width: 98%;
+    height: 140px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.balanca-dourada {
+    width: 5%;
+    margin: 25px;
+    padding: 10px;
+    margin-left: 100px;
+    margin-top: 0px;
+}
+
+.nome-formulario {
+    position: absolute;
+    color: #fff;
+    font-size: 17px;
+    font-family: Ephesis, serif;
+    font-weight: 100;
+    margin-left: 86px;
+    margin: 10;
+    margin-top: -37px;
+    font-style: italic;
+}
+.cel {
+    position: absolute;
+    font-size: 8px;
+    color: #fff;
+    margin-left: 83px;
+    margin-top: -18px;
+    border: none;
+
+}
+button {
+    margin-top: 20px;
+    width: 223px;
+    height: 35px;
+    background-color: #060606;
+    color: #fff;
+    border: none;
+    text-transform: uppercase;
+
+}
+
+button:hover {
+    background-color: rgb(60, 58, 58);
+}
+.menu_qs {
+    display: flex ;
+    color: #fff;
+    margin-left: 68%;
+    margin-top: -90px;
+    grid-gap: 40px;
+}
+.menu_qs ul {
+    list-style: none;
+    font-family: sans-serif;
+    font-size: 12px;
+} 
+.daughter {
+    display: grid;
+    width:98%;
+    height: 380px;
+    justify-self: center;
+    /* grid-gap: 10px; */
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: -200px;
+    margin-left: -10px;
+ 
+    
+    
+}
+.qs {
+    color: #fff;
+}
+.lado_centro {
+    display: grid;
+    justify-content: center;
+  
+
+}
+.causas {
+   
+    text-align: center;
+    background-color: #ccc;
+    height: 40px;
+    width: 100%;
+    font-weight: 200;
+    font-family: serif;
+    
+
+}
+.descricao_qs {
+   
+    height: 120px;
+   text-align: justify;
+    margin-top: -150px;
+    font-weight: 100;
+    font-family: sans-serif;
+    font-size: 18px;
+    color: #535353;
+   
+  
+    
+}
+.lado_direito {  
+    width: 100%; 
+    
+}
+.direito {
+    text-align: center;
+    background-color: #ccc;
+    height: 40px;
+    width: 99%;
+    font-weight: 200;
+    font-family: serif;
+}
+.descricao_direito {
+    height: 120px;
+    text-align: justify;
+     margin-top: 17px;
+     font-weight: 100;
+     width: 98%;
+     font-family: sans-serif;
+     font-size: 17px;
+     text-align: justify;
+     color: #535353;
+   
+}
+.carol {
+    width: 100%;
+    height: 100%;
+}
+
+  .redesociais_cad {
+    justify-self: center;
+    grid-column: 1/4;
+    margin-top: -230px;
+  }
+  .main_form {
+    display: grid;
+    width: 98%;
+    height: 180px;
+    grid-template-columns: 1fr 15%;
+    margin-top: -200px;
+    justify-content: center;
+    margin-left: 8px;
+    grid-gap: 10px;
+   
+   
+  }
+  .a {
+    background-color: #222;
+    width: 100%;
+    height: 180px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    
+   
+  }
+  .carolina {
+    width: 70%;
+    border-radius: 0px;
+    
+  }
+  .b {
+    background-color: beige;
+    height: 180px;
+  }
+  .sobre {
+    background-color: #ccc;
+    height: 40px;
+    width: 100%;
+    
+    
+    
+  }
+  .sobre-1 {
+    margin-left: 20px;
+    height: 40px;
+    width: 100%;
+    font-weight: 200;
+    font-family: serif;
+    font-size: 33px;
+  }
+  .titulo {
+    margin: 10px;
+    background-color: beige;
+    font-family: sans-serif;
+    font-weight: 100;
+    color: #535353;
+   
+    
+  }
+
+  .footer {
+    display: grid;
+  background: #222;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  height: 220px;
+  width: 98%;
+  margin-top: 20px;
+  margin-left: 10px;
+  
+}
+
+.redesociais {
+    display: grid;
+    background: #222;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-template-columns: 1fr 1fr 1gr 1fr;
+    height: 30px;
+    padding: 10px;
+    margin-top: 15px;
+    justify-content: center;
+  }
+  .instagram {
+    width: 25px;
+    height: 25px;
+    grid-column: 1/2;
+    margin-right: 20px;
+  }
+  
+  .facebook {
+    width: 25px;
+    height: 25px;
+    grid-column: 2/3;
+    margin-right: 20px;
+  }
+  
+  .pinterest {
+    width: 25px;
+    height: 25px;
+    grid-column: 3/4;
+    margin-right: 20px;
+  }
+  
+  .youtube {
+    width: 25px;
+    height: 25px;
+    grid-column: 4/5;
+    margin-right: 20px;
+  }
+
+
+  .contato {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    font-size: 1.5rem;
+    margin-top: 70px;
+    font-style: italic;
+    color: #e9941a;
+    text-align: center;
+  }
+    
+.rede_cad {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    text-align: center;
+    color:#e9941a;
+    font-style: italic;
+    font-size: 1.5rem;
+    margin-top: 70px;
+  }
+  
+
+.redesociais {
+    display: grid;
+    background: #222;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-template-columns: 1fr 1fr 1gr 1fr;
+    height: 30px;
+    padding: 10px;
+    margin-top: 15px;
+    justify-content: center;
+  }
+
+  
+.rodape {
+    font-size: 18px;
+    color: rgb(154, 136, 136);
+    margin-top: 10px;
+  }
+  .ico {
+    width: 12px;
+    height: 12px;
+  }
+  
+.nossoendereco {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    color: #e9941a;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 70px;
+    font-style: italic;
+  }
+  .fim {
+    width: 100%;
+    height: 30px;
+  }
+  

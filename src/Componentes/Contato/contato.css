@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    background-color: cadetblue;  
+    
+}
+.dad {
+    display: block;   
+    display: grid;
+    width: 78%;
+    height: 450px;
+    border: 1px solid #222;
+    background-color: rgb(194, 194, 187);
+    justify-self: center;
+    align-self: center;    
+    grid-template-rows: 1fr 1fr;
+    border-radius: 5px;
+   
+    
+   
+   
+     
+}
+.header {   
+    display: grid;
+    display: flex;
+    height: 60px;
+    background-color: khaki;
+    justify-self: center;
+    padding: 5px;  
+    grid-gap: 10px; 
+    border-radius: 5px;
+    grid-row: 1;
+    margin: 10px;
+}
+
+.section-area {
+    display: grid;
+    display: block;  
+    margin-top: 90px;
+    background-color: khaki;
+    width: 95%;
+    height: 278px;
+    justify-self: center;
+    margin-top: -135px;
+    border-radius: 5px;
+
+  
+}
+.area {
+    display: block;   
+    border: 1px solid #222;
+    height: 275px;
+    border-radius: 5px;
+}
+
+button {
+    display: block;
+    display: grid;   
+    justify-self: center;
+    align-items: center;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-left: 80.3%;
+}
+
+.dad-nome {
+    display: block;
+    background-color: #bdb9b9;
+    height: 50px;
+    padding: 3px;
+    
+}
+
+
+.l_nome-contato {
+  font-family: sans-serif;
+}
+.nome-contato {
+    display: block;
+    padding: 5px;
+    width: 110px;
+    border: 1px solid #222;
+    outline: 0;
+    border-radius: 4px;
+}
+.dad-email {
+    background-color: #bdb9b9;
+    height: 50px;
+    padding: 3px;
+}
+.l_email-contato {
+    font-family: sans-serif;
+}
+.email-contato {
+    display: block;
+    padding: 5px;
+    width: 270px;
+    border: 1px solid #222;
+    outline: 0;
+    border-radius: 4px;
+}
+.dad_data {
+    background-color: #bdb9b9;
+    height: 50px;
+    padding: 3px;
+}
+.l_data-contato {
+    font-family: sans-serif;
+}
+.data-contato {
+    display: block;
+    border: 1px solid #222;
+    outline: 0;
+    padding: 4px;
+    border-radius: 4px;
+}
+.dad-cel {
+    background-color: #bdb9b9;
+    height: 50px;
+    padding: 3px;
+}
+.l_cel-contato {
+    font-family: sans-serif;
+}
+.celular-contato {
+    display: block;
+    border: 1px solid #222;
+    outline: 0;
+    padding: 4px;
+    border-radius: 4px;
+}
+.dad-rg {
+    background-color: #bdb9b9;
+    height: 50px;
+    padding: 3px;
+}
+.l_rg {
+    font-family: sans-serif;
+}
+.rg-contato {
+    display: block;
+    border: 1px solid #222;
+    outline: 0;
+    padding: 4px;
+    border-radius: 4px;
+}
+.dad-cpf {
+    background-color: #bdb9b9;
+    height: 50px;
+    padding: 3px;
+
+}
+
+.l_cpf {
+    font-family: sans-serif;
+
+}
+.certificado {
+    display: block;
+    border: 1px solid #222;
+    outline: 0;
+    padding: 4px;
+    border-radius: 4px;
+}
+.res {
+    margin: 10px;
+
+}
+.info {
+    margin: 10px;
+    margin-top: 50px;
+    color: black;
+    font-size: 18px;
+
+
+    
+}
