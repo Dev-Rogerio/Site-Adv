@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import "../Contato/contato.css";
 
@@ -13,19 +13,34 @@ const Contato = () => {
     var resul = window.document.querySelector(".res")
     var info = window.document.querySelector(".info")
 
+     
+      // limpar a mensagem do resul quando atender a solicitação
+      // campo e-mail só letras
+
+      function validarEmail (index) {
+        const isValid = index.includes("@") && index.includes('.');
+        return isValid 
+      }
+    
+
+     
+
     if (nome.value === "") {
       resul.innerHTML = "Favor preenche todos os campos vazios!"
       window.document.querySelector(".nome-contato").focus()
 
-    } else if (nome.value === "" || nome.value.length <= 2) {
-      resul.innerHTML = "O campo nome precisa ter no minimo 3 caractere"
+    } else if (nome.value === "" || nome.value.length <= 4) {
+      resul.innerHTML = "O campo nome precisa ter no minimo 5 caracteres"
       window.document.querySelector(".nome-contato").focus()
+      
     }
-    // limpar a mensagem quando atender a solicitação
-    else if (email.value === "" || email.value.length <= 6) {
-        resul.innerHTML = ' [ Erro ] e-mail inválido'
-        window.document.querySelector('.email-contato').focus()
+     else if (!validarEmail (email.value)) {
+      resul.innerHTML = "[Erro] Campo inválido "
+      window.document.querySelector('.email-contato').focus()  
+      resul.setAttribute("style", "display: block"); 
+     
     }
+
     else if (data.value === "")  {
         resul.innerHTML = 'Informe a data de aniversário!'
         window.document.querySelector('.data-contato').focus()
@@ -45,25 +60,35 @@ const Contato = () => {
 
     }
     else{
-      info.innerHTML = `Olá <font color="blue"> ${nome.value} </font> , seu e-mail é, <font color="blue"> ${email.value} 
-      </font>, e seu aniversário é <font color="blue">${data.value}</font>. Confirme seus dados e comtinue: 
-      CPF <font color="blue">${cic.value}</font>, RG <font color="blue">
-       ${rg.value} </font>, <font color="blue"> ${celular.value}</font> . Agradecemos 
+      info.innerHTML = `Olá <font color="blue"> ${nome.value} </font> , aqui é o asistente Bruno, vamos confirmar seus dados
+      e-mail: <font color="blue"> ${email.value} 
+      </font>, Data Aniversário:  <font color="blue">${data.value}</font>, CPF <font color="blue">${cic.value}</font>, 
+      RG: <font color="blue"> ${rg.value} </font>, Contato: <font color="blue"> ${celular.value}</font>. Agradecemos 
       por sua participação, em breve entraremos em contato.`
     }
 
-    const [apagar, setApagar] = useState({
-      
-      name: '',
-      email: '',
-      aniv: '',
-      cel: '',
-      rg: '',
-      cpf: '', 
+  
+   }
 
-     });
-  }
+  
+   const [del, setDel] = useState({
+    name: '',
+    email: '',
+    aniv: '',
+    cel: '',
+    rg: '',
+    cpf: '', 
+    res: '',
+
+  });
+
+  const limpar = () => {
     
+   
+  }
+
+
+  
       
   return (
     <>
@@ -72,17 +97,12 @@ const Contato = () => {
           <div className="header">
             <div className="dad-nome">
               <label htmlFor="l_nome-contato">Nome:</label>
-              <input type="text" className="nome-contato" value={apagar.name} onChange={(e) => {(
-                setApagar({
-                  ...apagar, name: e.target.value
-                })
-              )}} />
-
+              <input type="text" className="nome-contato" />
             </div>
 
             <div className="dad-email">
               <label htmlFor="l_email-contato">E-mail</label>
-              <input type="text" className="email-contato" />
+              <input type="text" className="email-contato" value={del.name} onClick={limpar} />
             </div>
 
             <div className="dad_data">
@@ -109,7 +129,7 @@ const Contato = () => {
           <section className="section-area">
             <fieldset className="area">
               <legend>Deixe sua mensagem</legend>
-              <div className="res"></div>
+              <div className="res" value={del.res} ></div>
               <div className="info"></div>
             </fieldset>
 
